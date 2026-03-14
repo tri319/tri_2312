@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Bài thực hành bảo mật</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<style>
+
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    min-height:100vh;
+    color:white;
+}
+
+.container-box{
+    background:#1e1e2f;
+    padding:40px;
+    border-radius:15px;
+    margin-top:60px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.6);
+}
+
+.header{
+    display:flex;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.header img{
+    width:170px;
+}
+
+.title{
+    flex:1;
+    text-align:center;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.card-cipher{
+    padding:30px;
+    text-align:center;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
+    transition:all 0.3s;
+}
+
+.card-cipher:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.7);
+}
+
+.icon{
+    font-size:30px;
+    display:block;
+    margin-bottom:10px;
+}
+
+.caesar{ background:#0066ff; }
+.vigenere{ background:#1db954; }
+.rail{ background:#f1c40f; color:black; }
+.playfair{ background:#17a2b8; }
+.trans{ background:#e63946; }
+
+a{
+text-decoration:none;
+color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="container-box">
+
+<div class="header">
+<img src="https://file1.hutech.edu.vn/file/editor/homepage/stories/hinh34/logo%20CMYK-01.png">
+<h3 class="title">BÀI THỰC HÀNH BẢO MẬT THÔNG TIN</h3>
+</div>
+
+<div class="row">
+
+<div class="col-md-4 mb-3">
+<a href="/caesar">
+<div class="card-cipher caesar">
+<span class="icon">🔐</span>
+Caesar Cipher
+</div>
+</a>
+</div>
+
+<div class="col-md-4 mb-3">
+<a href="/vigenere">
+<div class="card-cipher vigenere">
+<span class="icon">🔑</span>
+Vigenere Cipher
+</div>
+</a>
+</div>
+
+<div class="col-md-4 mb-3">
+<a href="/railfence">
+<div class="card-cipher rail">
+<span class="icon">🔒</span>
+Rail Fence Cipher
+</div>
+</a>
+</div>
+
+<div class="col-md-6 mb-3">
+<a href="/playfair">
+<div class="card-cipher playfair">
+<span class="icon">🛡️</span>
+Playfair Cipher
+</div>
+</a>
+</div>
+
+<div class="col-md-6 mb-3">
+<a href="/transposition">
+<div class="card-cipher trans">
+<span class="icon">🔏</span>
+Transposition Cipher
+</div>
+</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
