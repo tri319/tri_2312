@@ -1,2 +1,4 @@
 Pyt5
 requestspp
+Flask>=2.3.2
+rsa>=4.9
